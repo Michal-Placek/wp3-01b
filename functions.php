@@ -1,5 +1,5 @@
 <?php
-function getCarDescription(int $year):void {
+function getCarInfo(int $year):void {
     if ($year <= 1960) {
         echo "To je fakt veterán!";
     }
@@ -15,4 +15,24 @@ function getCarDescription(int $year):void {
     else {
         echo "Auto je způsobilé.";
     }
+}
+
+function getTax(int $engine)
+if ($engine <= 800) {
+    echo "1200Kč";
+}
+elseif ($engine <= 1250) {
+    echo "1800 Kč";
+}
+elseif ($engine <= 1500) {
+    echo "2400 Kč";
+}
+elseif ($engine <= 2000) {
+    echo "3000 Kč";
+}
+elseif ($engine <= 3000) {
+    echo "3600 Kč";
+}
+else {
+    echo "4200 Kč";
 }
